@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,12 +11,13 @@
 		7F62A5980ABBE76E878E46B4 /* Pods_parstagramTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9385DCCD3BD5267D5FED6F4 /* Pods_parstagramTests.framework */; };
 		BB5014A82540E2130008AF49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5014A72540E2130008AF49 /* AppDelegate.swift */; };
 		BB5014AA2540E2130008AF49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5014A92540E2130008AF49 /* SceneDelegate.swift */; };
-		BB5014AC2540E2130008AF49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5014AB2540E2130008AF49 /* ViewController.swift */; };
 		BB5014AF2540E2130008AF49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB5014AD2540E2130008AF49 /* Main.storyboard */; };
 		BB5014B12540E2140008AF49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB5014B02540E2140008AF49 /* Assets.xcassets */; };
 		BB5014B42540E2140008AF49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB5014B22540E2140008AF49 /* LaunchScreen.storyboard */; };
 		BB5014BF2540E2140008AF49 /* parstagramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5014BE2540E2140008AF49 /* parstagramTests.swift */; };
 		BB5014CA2540E2140008AF49 /* parstagramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5014C92540E2140008AF49 /* parstagramUITests.swift */; };
+		BB5014EC2540E7D80008AF49 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5014EB2540E7D80008AF49 /* LoginViewController.swift */; };
+		BB5014F12540E7ED0008AF49 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5014F02540E7ED0008AF49 /* FeedViewController.swift */; };
 		F87D8555A68D04E7C9DD20E9 /* Pods_parstagram_parstagramUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDEFE31640B9382F578C8CEE /* Pods_parstagram_parstagramUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,7 +48,6 @@
 		BB5014A42540E2130008AF49 /* parstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = parstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB5014A72540E2130008AF49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB5014A92540E2130008AF49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BB5014AB2540E2130008AF49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BB5014AE2540E2130008AF49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB5014B02540E2140008AF49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB5014B32540E2140008AF49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -58,6 +58,8 @@
 		BB5014C52540E2140008AF49 /* parstagramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = parstagramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB5014C92540E2140008AF49 /* parstagramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = parstagramUITests.swift; sourceTree = "<group>"; };
 		BB5014CB2540E2140008AF49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB5014EB2540E7D80008AF49 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BB5014F02540E7ED0008AF49 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		BDEFE31640B9382F578C8CEE /* Pods_parstagram_parstagramUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_parstagram_parstagramUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC368A306481343F148F41BE /* Pods-parstagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-parstagram.release.xcconfig"; path = "Target Support Files/Pods-parstagram/Pods-parstagram.release.xcconfig"; sourceTree = "<group>"; };
 		E9385DCCD3BD5267D5FED6F4 /* Pods_parstagramTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_parstagramTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,7 +103,6 @@
 				AB7861B99B0EF1D4491720DF /* Pods-parstagramTests.debug.xcconfig */,
 				6CE436C8D2DA294011CE32D8 /* Pods-parstagramTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -142,8 +143,9 @@
 			children = (
 				BB5014A72540E2130008AF49 /* AppDelegate.swift */,
 				BB5014A92540E2130008AF49 /* SceneDelegate.swift */,
-				BB5014AB2540E2130008AF49 /* ViewController.swift */,
 				BB5014AD2540E2130008AF49 /* Main.storyboard */,
+				BB5014EB2540E7D80008AF49 /* LoginViewController.swift */,
+				BB5014F02540E7ED0008AF49 /* FeedViewController.swift */,
 				BB5014B02540E2140008AF49 /* Assets.xcassets */,
 				BB5014B22540E2140008AF49 /* LaunchScreen.storyboard */,
 				BB5014B52540E2140008AF49 /* Info.plist */,
@@ -407,8 +409,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB5014AC2540E2130008AF49 /* ViewController.swift in Sources */,
+				BB5014EC2540E7D80008AF49 /* LoginViewController.swift in Sources */,
 				BB5014A82540E2130008AF49 /* AppDelegate.swift in Sources */,
+				BB5014F12540E7ED0008AF49 /* FeedViewController.swift in Sources */,
 				BB5014AA2540E2130008AF49 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
