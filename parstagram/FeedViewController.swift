@@ -11,6 +11,12 @@ import AlamofireImage
 
 class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBAction func onLogout(_ sender: Any) {
+        PFUser.logOut()
+        var currentUser = PFUser.current()
+        self.dismiss(animated: true, completion: nil)
+    }
+    
 
     @IBOutlet weak var tableView: UITableView!
     
