@@ -9,6 +9,7 @@ target 'parstagram' do
   pod 'Parse'
   pod 'AlamofireImage'
   pod 'Alamofire'
+  pod 'MessageInputBar'
 
 
   target 'parstagramTests' do
