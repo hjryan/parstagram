@@ -86,11 +86,12 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         selectedPost.saveInBackground{(success, error) in
             if success {
                 print("Comment saved")
-                self.tableView.reloadData()
             } else {
                 print("Error saving comment")
             }
         }
+        self.tableView.reloadData()
+        
         // Clear and dismiss the input bar
         commentBar.inputTextView.text = nil
         showsCommentBar = false
